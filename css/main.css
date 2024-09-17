@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Stem';
-    src: url('/fonts/Stem-Light.woff2') format('woff2');
+    src: url('../fonts/Stem-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Stem';
-    src: url('/fonts/Stem-Regular.woff2') format('woff2');
+    src: url('../fonts/Stem-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Stem';
-    src: url('/fonts/Stem-medium.woff2') format('woff2');
+    src: url('../fonts/Stem-medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'Stem';
-    src: url('/fonts/Stem-Bold.woff2') format('woff2');
+    src: url('../fonts/Stem-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('/fonts/Gilroy-Semibold.woff2') format('woff2');
+    src: url('../fonts/Gilroy-Semibold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('/fonts/Gilroy-Bold.woff2') format('woff2');
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -181,7 +181,7 @@ button:focus-visible {
     padding-top: 250px;
     text-align: center;
     min-height: 800px;
-    background-image: linear-gradient(to top, rgba(2, 48, 71, 0.4), rgba(2, 48, 71, 0.4)), url(/img/background-image.jpg);
+    background-image: linear-gradient(to top, rgba(2, 48, 71, 0.4), rgba(2, 48, 71, 0.4)), url(../img/background-image.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -322,7 +322,7 @@ button:focus-visible {
     margin-top: 120px;
     text-align: center;
     min-height: 580px;
-    background-image: linear-gradient(to top, rgba(2, 48, 71, 0.4), rgba(2, 48, 71, 0.4)), url(/img/back-img-company.jpg);
+    background-image: linear-gradient(to top, rgba(2, 48, 71, 0.4), rgba(2, 48, 71, 0.4)), url(../img/back-img-company.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -445,7 +445,7 @@ button:focus-visible {
     margin-top: 120px;
     text-align: center;
     min-height: 1270px;
-    background-image: url(/img/back-stage.jpg);
+    background-image: url(../img/back-stage.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -532,7 +532,7 @@ button:focus-visible {
 .client-company {
     text-align: center;
     min-height: 620px;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/back-client-companies.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/back-client-companies.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -622,7 +622,7 @@ button:focus-visible {
     position: relative;
     text-align: center;
     min-height: 950px;
-    background-image: url(/img/back-data-input.jpg);
+    background-image: url(../img/back-data-input.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
