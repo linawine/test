@@ -181,7 +181,7 @@ button:focus-visible {
     padding-top: 250px;
     text-align: center;
     min-height: 800px;
-    background-image: linear-gradient(to top, rgba(2, 48, 71, 0.4), rgba(2, 48, 71, 0.4)), url(../img/background-image.jpg);
+    background: linear-gradient(to top, rgba(2, 48, 71, 0.4), rgba(2, 48, 71, 0.4)), url(../img/background-image.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -464,24 +464,39 @@ button:focus-visible {
     padding-top: 24px;
 }
 
-.advantage-work-card {
-    padding-top: 120px;
+.advantage-work-card-block {
+    padding: 120px 0;
+    column-gap: 30px;
+    row-gap: 76px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 30px;
-    row-gap: 64px;
+    scroll-snap-type: x mandatory;
+
+}
+
+.avantage-work-card {
+    max-width: 350px;
+}
+
+.advantage-work-card-title {
+    font-size: 28px;
+    padding-top: 32px;
     color: var(--color-light);
-    padding-bottom: 100px;
 }
 
-.advantage-work-card .card-block {
-    min-width: 350px;
-    height: 310px;
-}
-
-.advantage-work-card .card-block p {
+.advantage-work-card-text {
     font-weight: 300;
+    font-size: 18px;
+    color: var(--color-light);
+    opacity: 0.7;
+}
+
+.advantage-work-card-block p {
+    font-size: 18px;
+    padding-top: 16px;
+    font-weight: 300;
+    color: var(--color-light);
     opacity: 0.7;
 }
 
@@ -504,8 +519,7 @@ button:focus-visible {
 
 .portfolio-text {
     padding-top: 24px;
-    font-size: min(2.4vw, 24px);
-
+    font-size: 24px;
 }
 
 .portfolio-img {
@@ -579,17 +593,16 @@ button:focus-visible {
 }
 
 .feedback-title-2 {
-    font-size: min(2.4vw, 24px);
+    font-size: 24px;
     padding-top: 24px;
 }
 
 .feedback-card {
-    padding-top: 80px;
-    margin-top: 0;
     column-gap: 30px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .feedback-card-block {
@@ -870,10 +883,6 @@ input[type=email] {
         margin-left: 60px;
     }
 
-    .advantage-work {
-        margin-top: 90px;
-    }
-
     .portfolio {
         margin-top: 80px;
     }
@@ -883,7 +892,7 @@ input[type=email] {
     }
 
     .feedback-card-block {
-        padding: 30px 22px;
+        padding: 20px 12px;
         max-width: 250px;
     }
 
@@ -898,15 +907,32 @@ input[type=email] {
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
         max-height: 500px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .feedback-card-block {
         scroll-snap-align: center;
     }
 
+    .advantage-work {
+        min-height: 900px;
+        padding-bottom: 20px;
+    }
+
     .advantage-title-1 {
         margin-top: 50px;
+    }
+
+    .advantage-work-card-block {
+        padding: 50px 0;
+        margin: 40px 0;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        max-height: 700px;
+    }
+
+    .advantage-work-card {
+        scroll-snap-align: center;
     }
 
 }
@@ -1031,20 +1057,7 @@ input[type=email] {
     }
 
     .advantage-work {
-        margin-top: 40px;
-        min-height: 600px;
-        min-width: 375px;
-    }
-
-    .advantage-work-card {
-        flex-wrap: nowrap;
-        scroll-snap-type: x mandatory;
-        overflow-x: auto;
-        padding: 50px 0;
-    }
-
-    .advantage-work-card .card-block {
-        scroll-snap-align: start;
+        margin-top: 50px;
     }
 
     .portfolio {
@@ -1063,6 +1076,7 @@ input[type=email] {
 
     .portfolio-text {
         padding-bottom: 20px;
+        font-size: 18px;
     }
 
     .portfolio-img-card img {
@@ -1088,6 +1102,10 @@ input[type=email] {
     .client-company-title-1 {
         padding-top: 90px;
     }
+
+    .feedback-title-2 {
+        font-size: 18px;
+    }
 }
 
 
@@ -1108,6 +1126,10 @@ input[type=email] {
 
     .client-company-img {
         padding-bottom: 50px;
+    }
+
+    .portfolio-text {
+        font-size: 14px;
     }
 
 }
@@ -1213,7 +1235,7 @@ input[type=email] {
     }
 
     .advantage-work {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .portfolio {
@@ -1233,7 +1255,15 @@ input[type=email] {
     }
 
     .portfolio-text {
-        padding-top: 10px;
+        padding-top: 14px;
+    }
+
+    .client-company {
+        min-height: 300px;
+    }
+
+    .client-company-img {
+        padding: 20px 0;
     }
 
     .client-company-title-1 {
@@ -1244,8 +1274,17 @@ input[type=email] {
         font-size: 14px;
     }
 
-    .footer-menu {
+    .feedback {
+        margin-top: 50px;
+    }
+
+    .feedback-card-block {
+        padding: 20px 15px;
+    }
+
+    .footer-menu-list {
         font-size: 14px;
+        column-gap: 20px;
     }
 }
 
