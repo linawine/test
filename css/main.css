@@ -500,9 +500,10 @@ button:focus-visible {
 .advantage-work-card-block p {
     font-size: 18px;
     padding-top: 16px;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--color-light);
     opacity: 0.7;
+    line-height: 24px;
 }
 
 /* SECTION PORTFOLIO */
@@ -525,6 +526,10 @@ button:focus-visible {
 .portfolio-text {
     padding-top: 24px;
     font-size: 24px;
+    color: rgba(2, 48, 71, 0.8);
+    
+    max-width: 720px;
+    margin-inline: auto;
 }
 
 .portfolio-img {
@@ -602,6 +607,8 @@ button:focus-visible {
     font-size: 24px;
     padding-top: 24px;
     color: rgba(0, 0, 0, 0.7);
+    max-width: 720px;
+    margin-inline: auto;
 }
 
 .feedback-card {
@@ -969,6 +976,10 @@ input[type=email] {
         padding-top: 120px;
     }
 
+    .banner-title {
+        font-size: 48px;
+    }
+
     .banner-text {
         max-width: 400px;
         margin: 0 auto;
@@ -1122,6 +1133,9 @@ input[type=email] {
 
 
 @media (max-width: 590px) {
+    .banner-title {
+        font-size: 36px;
+    }
 
     .advantage-card {
         overflow-y: scroll;
@@ -1151,6 +1165,10 @@ input[type=email] {
     .banner {
         min-height: 400px;
         padding-top: 100px;
+    }
+
+    .banner-title {
+        font-size: 24px;
     }
 
     .banner-text {
